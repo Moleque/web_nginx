@@ -1,5 +1,5 @@
 def app(environ, start_response):
-    data = "\n".join(environ['QUERY_STRING'].split("&"))
+    data = str.encode("\n".join(environ['QUERY_STRING'].split("&")))
 
     start_response("200 OK", [
         ("Content-Type", "text/plain"),
