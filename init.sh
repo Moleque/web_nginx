@@ -1,4 +1,3 @@
-#!/bin/sh
 sudo pip3 install --upgrade django==2.0.7
 
 sudo ln -sf /home/box/web/etc/nginx.conf /etc/nginx/sites-enabled/default
